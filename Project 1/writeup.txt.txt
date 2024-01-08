@@ -1,0 +1,44 @@
+﻿1. English/C description of assembly 
+--- 
+* Line 1:
+   * Description: Sets the high order (most significant) bits of r2 to partial address of X
+* Line 2:
+   * Description: Sets the low order (least significant) bits of r2 to partial address of X
+   * Int X[] = [5, 3, -6, 19, 8, 12];
+* Line 3: 
+   * Description: Moves address of Y into r3
+   * Int *x = &Y;
+* Line 4:
+   * Description: Moves address of Y into r4
+   * Int *y = &N;
+* Line 5:
+   * Description: Loads value at memory location r4 into r4
+   * y* = 6
+* Line 6:
+   * Description: adds 0+0 and places value in r5
+   * Int a = 0+0;
+* Line 7:
+   * Description: Branch
+* Line 8:
+   * Description: Loads value at memory location r2 into r6
+   * Int z[] = X;
+* Line 9:
+   * Description: Stores value in r6 at memory location in r3
+   * Y* = z;
+* Line 10:
+   * Description: Adds 4 to r2 and stores value in r2
+   * &x = &x + 4;
+* Line 11:
+   * Description: Description: Adds 4 to r3 and stores value in r3
+   * &Y = &Y + 4;
+* Line 12:
+   * Description: Description: Subtracts 1 from r4 and stores value in r4
+   * N = 6 - 1;
+* Line 13:
+   * Description: If r4 > 0, branch to label
+   * if(0<=5){LABEL;}
+2. decoded instruction (e.g. addi r3, r4, 8)
+stw r4, 0xFFE4(r19)
+--- 
+3. encoded instruction (e.g. 0xDEADBEEF)
+0x2D9D203A
